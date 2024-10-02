@@ -8,18 +8,31 @@
 
 #clock{
     position: absolute;
+    width: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 30px;
-    font-size: 60px;
+    padding: 20px;
+    font-size: 50px;
     letter-spacing: 7px;
     font-size: 122px;
     background: linear-gradient(to right, #330033,#000);
     color: #ffcc00;
     border: 3px solid #ffcc00;
-    padding: 20px;
     box-shadow: 0 0 10px rgba(255,204,0,0,0.8);
     text-shadow: 0 0 10px rgba(0,0,0,0.8);
     border-radius: 20px;
+}
+
+@media(max-width:700px){
+    #clock{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:1000px){
+    #clock{
+        font-size: 40px;
+        align-items: center;
+    }
 }
